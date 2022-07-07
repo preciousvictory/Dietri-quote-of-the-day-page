@@ -1,0 +1,861 @@
+/* Color Palette 
+#7a121b - wine
+#fad427 - yellow*/
+
+
+/* Global Styles
+---------------------------------- */
+*{
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.quote-of-the-day, .meals, .news, .suggest h2,  .options, footer{
+    padding: 20px 30px;
+}
+
+/* Header styles
+------------------------------ */
+
+header{
+    padding: 5px 40px;
+    height: 75px;
+    background-color: #7a121b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    flex: 15%;
+}
+
+/* Nav styles
+------------------------------ */
+nav{
+    flex: 85%;
+}
+
+nav ul li{
+    float: left;
+}
+
+.nav-list, .profile{
+    float: right;
+    margin-top: 15px;
+}
+
+.nav-item{
+    padding: 5px 10px;
+}
+
+.nav-item a{
+    padding: 3px 0px;
+}
+
+.nav-item a.active{
+    border-bottom: 2px solid #fad427;
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid #fad427;
+}
+
+.nav-item.signout{
+    border: 1px solid #fad427;
+    border-radius: 8px;
+    margin-left: 20px;
+    transition: 1s ease-out;
+}
+
+.nav-item.signout:hover{
+    background-color: #fad427;
+}
+
+.nav-item.signout a:hover{
+    border: 0;
+}
+
+.profile{
+    display: inline;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+
+.profile h6{
+    color: #fad427;
+    font-size: 10px;
+    margin: auto;
+}
+
+.profile img{
+    display: block;
+    margin: auto;
+}
+
+.profile.nav-item{
+    padding: 0;
+}
+
+.hamburger{
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    float: right;
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+}
+
+.bar{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fad427;
+    margin: 8px 0;
+}
+
+
+/* quote-of-the-day styles
+------------------------------ */
+.quote-of-the-day h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+.quote-of-the-day q{
+    font-size: 14px;
+}
+
+/* Meals styles
+------------------------------ */
+.meals{
+    margin-top: 20px;
+}
+
+.meals .meal-times{
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.meal-times li{
+    width: 33.33%;
+    display: inline-block;
+}
+
+.meal-times li:nth-child(2){
+    text-align: center;
+}
+
+.meal-times li:nth-child(3){
+    text-align: right;
+}
+
+.meal-times a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.meal-times a.active{
+    border-bottom: 3px solid #fad427;
+}
+
+.meal-times a:hover{
+    border-bottom: 3px solid #fad427;
+}
+
+
+.meals .picturegroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/Dish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    padding: 30px 40px 20px;
+    color: #ffffff;
+}
+
+.meals .picturegroup p{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.check{
+    margin-top: -10px;
+    padding-right: 20px;
+    float: right;
+    z-index: 2;
+}
+
+.caption>*{
+    display: inline-block;
+}
+
+.caption p{
+    max-width: 50%;
+    line-height: 20px;
+}
+
+/* News styles
+------------------------------ */
+.news h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.news-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-group figure {
+    flex: 30%;
+}
+
+.news-group figure img{
+    width: 100%;
+}
+
+.news-group figure h6{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+/* Suggestion styles
+------------------------------ */
+.suggest{
+    margin: 40px 0;
+}
+
+.suggest .options{
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: #d9d9d9;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+.suggest .options figure{
+    display: inline-block;
+}
+
+.suggest h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.suggestions{
+    padding: 40px 10px 0;
+    width: 175px;
+    z-index: -1;
+}
+
+.suggestions h3, .suggestions h6{
+    display: inline;
+}
+
+.suggestions .food-name{
+    padding-top: 8px;
+}
+
+.suggestions h3{
+    font-size: 14px; 
+}
+
+.suggestions h6{
+    font-size: 9px;
+}
+
+.suggestions p{
+    width: 175px;
+    font-size: 11px;
+    text-align: left;
+    padding-top: 5px;
+    font-size: 12px;
+    white-space:initial;
+}
+
+.suggest .arrow{
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #a7a2a2;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: -70px 40px 0;
+    cursor: pointer;
+}
+
+.suggest .arrow img{
+    width: 15px;
+    height: 26px;
+    margin: 12px 20px;
+    z-index: 1;
+}
+
+.suggest .arrow2{
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #a7a2a2;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: -70px 40px 0;
+    cursor: pointer;
+}
+
+.suggest .arrow2 img{
+    width: 15px;
+    height: 26px;
+    margin: 12px 15px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+
+
+/* Footer styles
+------------------------------ */
+footer{
+    background-color: #7a121b;
+    color: #ffffff;
+}
+
+.footer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer h6{
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+footer p, footer label{
+    font-size: 11px;
+    line-height: 18px;
+    margin-bottom: 0px;
+}
+
+footer form{
+    padding: 15px 0 40px;
+}
+
+footer #email{
+    background: #b07878;
+    color: #ffffff;
+    width: 400px;
+    height: 30px;
+    border: 1px solid #fad427;
+    border-radius: 6px;
+    padding: 2px 10px;
+}
+
+footer form input:focus{
+    outline: 1px solid #fad427;
+}
+
+footer label{
+    padding-right: 10px;
+}
+
+#email::placeholder{
+    color: #ffffff93;
+}
+
+footer form .btn{
+    border: 0;
+    outline: 1px solid #fad427;
+    background-color: #fad427;
+    border-radius: 8px;
+    margin-left: 10px;
+    transition: 1s ease-out;
+    width: 120px;
+    height: 36px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer form .btn:hover{
+    background-color: #fad327b2;
+}
+
+footer form .btn:active{
+    background-color: #fad327b2;
+    outline: 1px solid #fad327b2;
+}
+
+footer .more_info{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 10px 0 20px;
+}
+
+footer .more_info .col1, footer .more_info .col2 {
+    flex: 1 1 35%;
+}
+
+footer .footer-logo {
+    flex: 1 1 30%;
+}
+
+
+footer .footer-logo img{
+    width: 220px;
+    height: 130px;
+    flex: 1 1 30%;
+}
+
+footer .more_info .col1 .col1-row1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+footer .col1 .col1-row1>*{
+    flex: 1 1 33.33%;
+}
+
+.line{
+    flex: 1 1 0.1%;
+    width: 1px;
+    height: 100px;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+
+footer .col2 .col2-row1{
+    text-align: left;
+}
+
+footer .info{
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .contact-list{
+    padding-left: 40px;
+}
+
+footer .contact-lists{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+footer .contact-lists>*{
+    flex: 1 1 25%;
+}
+
+
+
+.col2-row1 li{
+    font-size: 12px;
+    padding-bottom: 10px;
+    word-spacing: 0.3px;
+}
+
+.col2-row1 li a{
+    padding-left: 10px;
+}
+@media screen and (max-width: 1200px) {
+    .meals .picturegroup{
+        height: 80vh;
+        width: auto;
+        padding: 30px 40px 20px;
+        color: #ffffff;
+    }
+
+    .caption p{
+        max-width: 50%;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .meals .picturegroup{
+        height: 70vh;
+        width: auto;
+        padding: 30px 40px 20px;
+        color: #ffffff;
+    }
+
+    .caption p{
+        max-width: 75%;
+        line-height: 20px;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    /* Nav styles
+    ------------------------------ */
+    nav {
+        display: none;
+    }
+
+    .nav-menu.active{
+        position: fixed;
+        background-color: #7a121b;
+        width: 100%;
+        height: 70%;
+        top: 75px;
+        border: 1px solid #fad427;
+        padding-top: 0px;
+        display: flex !important;
+        flex-direction: column-reverse;
+        align-items: center;
+        box-shadow: 2px 2px 2px #535353;
+    }
+
+    .nav-list, .profile {
+        float: none;
+        margin-top: 30px;
+    }
+
+    .nav-list{
+        flex: 1 1 70%;
+    }
+
+    .profile{
+        flex: 1 1 30%;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    .nav-item{
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-item.signout {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .bar{
+        display: block;
+    }
+
+    .bar{
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(12px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .nav-menu.active{
+        left: 0;
+        display: block;
+    }
+
+    /* Meals styles
+    ------------------------------ */
+    .meals{
+        height: 78vh;
+    }
+    .meals .meal-times{
+        display: block;
+        height: 50px;
+        padding: 0 40px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .meals .meal-times::-webkit-scrollbar {
+        height: 10px;
+      }
+
+    .meals .meal-times::-webkit-scrollbar-track {
+        background-color: #a7a2a2;
+        border-radius: 8px;
+      }
+    
+    .meals .meal-times::-webkit-scrollbar-thumb {
+        background: #fad427; 
+        border-radius: 10px;
+      }
+
+    .meals .meal-times::-webkit-scrollbar-thumb:hover {
+        background: #fad327a4; 
+      }
+      
+    
+    .meal-times li{
+        display: inline-block;
+        width: 200px;
+    }
+
+    .meal-times li:nth-child(2){
+        text-align: center;
+    }
+    
+    .meal-times li:nth-child(3){
+        text-align: right;
+    }
+    
+    .meal-times a{
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 3px;
+    }
+    
+
+    .main-meal img {
+        width: 100vw;
+        height: 320px;
+    }
+
+    .meals .picturegroup{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 50vh;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    .meals .picturegroup .name{
+        padding: 30px 40px 20px;
+    }
+
+    .caption{
+        margin: 250px 0 0;
+        background-color: black;
+        padding: 30px 20px 20px;
+        z-index: -1;
+    }
+
+    .caption>* {
+        display: block;
+    }
+
+    .caption p {
+    max-width: 100%;
+    line-height: 20px;
+}
+
+
+    /* News styles
+    ------------------------------ */
+    .news-group figure {
+        align-items: center;
+    }
+    
+  
+
+
+    /* Footer styles
+    ------------------------------ */
+
+    
+    footer form label{
+        line-height: 40px;
+    }
+
+    footer #email{
+        width: 90%;
+    }
+
+    footer .btn{
+        margin-top: 20px;
+    }
+
+    footer .more_info{
+        gap: 10px;
+        padding: 10px 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .line {
+        flex: none;
+    }
+
+    footer .more_info .col1, footer .more_info .col2 {
+        width: 50%;
+        flex: 1 1 30%;
+    }
+
+    footer .footer-logo {
+        width: 100%;
+        flex: 1 1 100%;
+        padding-bottom: 40px;
+    }
+
+@media screen and (max-width: 460px) {
+    .nav-menu.active{
+        position: fixed;
+        background-color: #7a121b;
+        width: 150px;
+    }
+
+    /* suggest styles
+    ------------------------------ */
+
+    .suggest h2{
+        font-size: 20px;
+    }
+
+    /* News styles
+    ------------------------------ */
+    .news-group figure {
+        flex: 1 1 60%;
+    }
+
+    /* Meals styles
+    ------------------------------ */
+    .meals{
+        height: 60vh;
+    }
+
+    .meals .meal-times{
+        padding: 0;
+    }
+
+    .meals .meal-times li{
+        width: 150px;
+    }
+
+    .meals .picturegroup{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 40vh;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    .caption {
+        margin: 180px 0 0;
+        background-color: black;
+        padding: 30px 20px 20px;
+        z-index: -1;
+    }
+    
+
+    /* Footer styles
+    ------------------------------ */
+    footer .more_info{
+        gap: 30px;
+        padding: 10px 0 30px;
+    }
+
+    .line {
+        width: 100%;
+        height: 1px;
+    }
+
+    footer .footer-logo img {
+        width: 197px;
+        height: 109px;
+        flex: 1 1 30%;
+    }
+
+    footer .more_info .col1, footer .more_info .col2 {
+        flex: 1 1 100%;
+    }
+
+    footer .footer-logo {
+        flex: 1 1 100%;
+        padding-bottom: 20px;
+    }
+}    
+
+
+@media screen and (max-width: 430px) {
+    .quote-of-the-day, .meals, .news, .suggest h2,  .options, footer{
+        padding: 20px 12px;
+    }
+    
+    /* Meals styles
+    ------------------------------ */
+    .meals{
+        height: 50vh;
+    }
+
+    .meals .picturegroup{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 30vh;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    .caption {
+        margin: 110px 0 0;
+        background-color: black;
+        padding: 30px 20px 20px;
+        z-index: -1;
+    }
+
+    .meals .picturegroup .name {
+        font-size: 12px;
+        padding: 30px 15px 20px;
+    }
+}
+}
+
+@media screen and (max-width: 300px) {
+        /* Meals styles
+    ------------------------------ */
+    .meals{
+        height: 75vh;
+    }
+
+}
