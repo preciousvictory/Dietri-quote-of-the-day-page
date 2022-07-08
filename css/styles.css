@@ -734,6 +734,11 @@ footer .contact-lists>*{
         flex: 1 1 100%;
         padding-bottom: 40px;
     }
+@media screen and (max-width: 520px) {
+    .meals{
+        height: 85vh;
+    }
+}
 
 @media screen and (max-width: 460px) {
     .nav-menu.active{
@@ -758,7 +763,7 @@ footer .contact-lists>*{
     /* Meals styles
     ------------------------------ */
     .meals{
-        height: 60vh;
+        height: 80vh;
     }
 
     .meals .meal-times{
@@ -824,7 +829,7 @@ footer .contact-lists>*{
     /* Meals styles
     ------------------------------ */
     .meals{
-        height: 50vh;
+        height: 70vh;
     }
 
     .meals .picturegroup{
@@ -855,6 +860,16 @@ footer .contact-lists>*{
         /* Meals styles
     ------------------------------ */
     .meals{
-        height: 75vh;
+        height: 85vh;
     }
+
+}
+
+@media screen and (max-width: 220px) {
+    /* Meals styles
+------------------------------ */
+.meals{
+    height: 95vh;
+}
+
 }
