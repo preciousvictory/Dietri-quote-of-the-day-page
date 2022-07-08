@@ -416,6 +416,10 @@ footer form .btn:active{
     outline: 1px solid #fad327b2;
 }
 
+footer form .btn:focus{
+    border: 0;
+}
+
 footer .more_info{
     display: flex;
     flex-direction: row;
@@ -478,6 +482,18 @@ footer .contact-lists{
 
 footer .contact-lists>*{
     flex: 1 1 25%;
+}
+
+footer .col1-row1 .more:hover{
+    border-bottom: 3px solid #fad427;
+}
+
+footer .mail:hover{
+    color: #fad427;
+}
+
+footer .p_no:hover{
+    color: #fad427;
 }
 
 
