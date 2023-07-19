@@ -14,3 +14,8 @@ Dietri Dietri-quote-of-the-day-page
 # This is the desktop view
 ![](dietri-quote-of-the-day-page-mobile.png)
 
+## Author
+
+- LinkedIn - [Abiodun-Omoniyi Victory](https://www.linkedin.com/in/victory-a-17a11b231/)
+- Frontend Mentor - [@preciousvictory](https://www.frontendmentor.io/profile/preciousvictory)
+- Twitter - [@preciousvicky_](https://www.twitter.com/preciousvicky_)
