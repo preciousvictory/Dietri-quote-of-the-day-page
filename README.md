@@ -11,7 +11,7 @@ Dietri Dietri-quote-of-the-day-page
 # This is the desktop view
 ![](dietri-quote-of-the-day-page-desktop.png)
 
-# This is the desktop view
+# This is the mobile view
 ![](dietri-quote-of-the-day-page-mobile.png)
 
 ## Author
